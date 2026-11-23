@@ -1,0 +1,111 @@
+{
+  "app": {
+    "name": "CholulaGo",
+    "city": "San Andrés Cholula",
+    "tagline": "Tu ruta, sin perderte"
+  },
+  "sites": [
+    {
+      "id": "zona-arqueologica",
+      "number": "01",
+      "name": "Zona Arqueológica de Cholula",
+      "shortName": "Gran Pirámide",
+      "type": "Arqueología",
+      "distance": "Inicio",
+      "walkTime": 0,
+      "summary": "Recorre la plataforma más grande de Mesoamérica y descubre la Gran Pirámide desde sus túneles y miradores.",
+      "keyFact": "La pirámide creció en siete etapas constructivas y conserva pasillos arqueológicos abiertos a la visita.",
+      "orientation": "Ingresa por la calle 4 Poniente. El sendero principal lleva al museo de sitio y a las escaleras de salida.",
+      "offline": true,
+      "accent": "#f8a33c",
+      "icon": "Z"
+    },
+    {
+      "id": "museo-sitio",
+      "number": "02",
+      "name": "Museo de Sitio",
+      "shortName": "Museo de Sitio",
+      "type": "Museo",
+      "distance": "450 m",
+      "walkTime": 6,
+      "summary": "Contexto visual de los hallazgos, ofrendas y etapas históricas de Cholula antes y después de la visita al túnel.",
+      "keyFact": "Las vitrinas reúnen piezas de distintos periodos y ayudan a reconocer vestigios que siguen bajo la ciudad.",
+      "orientation": "Está junto a la entrada arqueológica. Consulta el plano interior antes de bajar o salir al ascenso.",
+      "offline": true,
+      "accent": "#2c9f78",
+      "icon": "M"
+    },
+    {
+      "id": "iglesia-remedios",
+      "number": "03",
+      "name": "Iglesia de Nuestra Señora de los Remedios",
+      "shortName": "Los Remedios",
+      "type": "Arquitectura",
+      "distance": "1.1 km",
+      "walkTime": 14,
+      "summary": "Sube a la cima de la Gran Pirámide para encontrar una panorámica emblemática y el santuario colonial.",
+      "keyFact": "El santuario corona la estructura artificial más voluminosa de Cholula y ofrece vistas hacia el Popocatépetl.",
+      "orientation": "Desde la zona arqueológica, toma las escaleras al oeste. Lleva agua y evita caminar por el borde del cerro.",
+      "offline": true,
+      "accent": "#d96a56",
+      "icon": "I"
+    },
+    {
+      "id": "san-gabriel",
+      "number": "04",
+      "name": "Real y Convento de San Gabriel Arcángel",
+      "shortName": "San Gabriel",
+      "type": "Patrimonio",
+      "distance": "1.8 km",
+      "walkTime": 22,
+      "summary": "Uno de los conventos franciscanos mejor conservados, reconocido por su portería abierta y capillas posas.",
+      "keyFact": "Su patio fue construido con influencia mudéjar y conserva detalles que hablan de la historia conventual colonial.",
+      "orientation": "Cruza hacia el centro por calle 12 Oriente. El portal principal da a una plaza con amplias zonas de sombra.",
+      "offline": true,
+      "accent": "#6675a7",
+      "icon": "S"
+    }
+  ],
+  "routes": {
+    "complete": {
+      "label": "Ruta completa",
+      "distance": "3.2 km",
+      "time": "75 min",
+      "summary": "De arqueología al centro, a ritmo tranquilo."
+    },
+    "short": {
+      "label": "Poco tiempo / 2h",
+      "distance": "2.1 km",
+      "time": "50 min",
+      "summary": "Prioriza los túneles, el museo y el santuario."
+    },
+    "culture": {
+      "label": "Enfoque cultural y arquitectura",
+      "distance": "2.8 km",
+      "time": "65 min",
+      "summary": "Más contexto histórico y arquitectura colonial."
+    }
+  },
+  "faq": [
+    {
+      "question": "¿Qué veo si solo tengo 2 horas?",
+      "answer": "Empieza por la Zona Arqueológica, continúa al Museo de Sitio y reserva 20 minutos para subir a Los Remedios.",
+      "category": "Tiempo"
+    },
+    {
+      "question": "¿Cómo llego entre los sitios?",
+      "answer": "La ruta central se hace a pie. Para reducir pendientes, toma transporte local desde 12 Oriente hacia el centro.",
+      "category": "Orientación"
+    },
+    {
+      "question": "¿Qué lugares tienen sombra?",
+      "answer": "El Museo de Sitio y San Gabriel ofrecen espacios cubiertos; en la zona arqueológica busca áreas laterales durante el mediodía.",
+      "category": "Consejos"
+    },
+    {
+      "question": "¿Dónde conviene iniciar?",
+      "answer": "Inicia en la entrada arqueológica, sigue el recorrido ascendente y termina en San Gabriel para regresar caminando al centro.",
+      "category": "Ruta"
+    }
+  ]
+}
