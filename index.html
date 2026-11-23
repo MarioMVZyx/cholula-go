@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#fbfaf6">
   <title>CholulaGo · Tu ruta cultural</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -79,10 +82,34 @@
 
       <div class="qr-hero" id="qr-hero">
         <div class="qr-frame" aria-hidden="true">
-          <div class="qr-grid">
-            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
-          </div>
-          <div class="scan-line"></div>
+          <svg viewBox="0 0 180 150" role="img">
+            <defs>
+              <linearGradient id="phone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#63724f"/><stop offset="1" stop-color="#26382e"/></linearGradient>
+              <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffd267"/><stop offset="1" stop-color="#c88d35"/></linearGradient>
+              <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="5" flood-opacity=".35"/></filter>
+            </defs>
+            <ellipse cx="90" cy="139" rx="55" ry="7" fill="#13231d" opacity=".28"/>
+            <g filter="url(#shadow)" transform="rotate(-7 88 78)">
+              <rect x="47" y="18" width="82" height="116" rx="12" fill="url(#phone)" stroke="#dce2c8" stroke-width="3"/>
+              <rect x="54" y="28" width="68" height="94" rx="7" fill="#f8f1dc"/>
+              <circle cx="88" cy="126" r="3" fill="#dce2c8"/>
+              <rect x="73" y="22" width="30" height="3" rx="2" fill="#aeb99a"/>
+            </g>
+            <g transform="translate(68 61)">
+              <rect width="40" height="40" rx="4" fill="#26382e"/>
+              <rect x="5" y="5" width="11" height="11" fill="#fff"/>
+              <rect x="24" y="5" width="11" height="11" fill="#fff"/>
+              <rect x="5" y="24" width="11" height="11" fill="#fff"/>
+              <rect x="20" y="21" width="6" height="6" fill="#fff"/>
+              <rect x="29" y="29" width="6" height="6" fill="#fff"/>
+            </g>
+            <g class="holo" transform="translate(113 14)">
+              <path d="M15 48h42L44 5H28z" fill="url(#gold)" stroke="#ffe38a" stroke-width="1.5"/>
+              <path d="M20 39h32M24 30h24M28 21h16M31 12h10" fill="none" stroke="#7e5a2e" stroke-width="2"/>
+              <rect x="32" y="48" width="8" height="16" rx="2" fill="#fff0a6"/>
+            </g>
+            <path d="M115 50l38-28" fill="none" stroke="#f6c85c" stroke-width="2" stroke-dasharray="4 5"/>
+          </svg>
         </div>
         <div>
           <p class="eyebrow">Escanea o selecciona</p>
@@ -127,6 +154,10 @@
             <p>¿Qué te gustaría resolver?</p>
           </div>
         </div>
+        <form class="chat-input" id="chat-form">
+          <input id="chat-text" type="text" placeholder="Escribe tu pregunta..." aria-label="Pregunta al asistente">
+          <button type="submit" aria-label="Enviar">↑</button>
+        </form>
         <button class="reset-chat" id="reset-chat" hidden>Limpiar conversación</button>
       </section>
     </section>
